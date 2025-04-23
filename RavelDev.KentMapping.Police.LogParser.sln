@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RavelDev.KentMapping.Police.LogParser", "RavelDev.KentMapping.Police.LogParser\RavelDev.KentMapping.Police.LogParser.csproj", "{908A08DA-9066-4EBD-9985-A8677A2C4EF1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RavelDev.KentMapping.Police.Core", "RavelDev.KentMapping.Police.Core\RavelDev.KentMapping.Police.Core.csproj", "{BF34CE92-03CC-4885-B036-BCD6B5C401E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RavelDev.Core", "..\RavelDev.Core\RavelDev.Core.csproj", "{E104BFFA-D595-4338-AA16-BDF4649A3741}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RavelDev.GoogleMaps", "..\RavelDev.GoogleMaps\RavelDev.GoogleMaps.csproj", "{2CD77426-5A40-4A6C-8D2F-D161A598DD9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RavelDev.KentMapping.Police.SQL", "RavelDev.KentMapping.Police.SQL\RavelDev.KentMapping.Police.SQL.csproj", "{4C5D9C1D-9A0A-42FA-B659-DDBEF0B97647}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{908A08DA-9066-4EBD-9985-A8677A2C4EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908A08DA-9066-4EBD-9985-A8677A2C4EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908A08DA-9066-4EBD-9985-A8677A2C4EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908A08DA-9066-4EBD-9985-A8677A2C4EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF34CE92-03CC-4885-B036-BCD6B5C401E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF34CE92-03CC-4885-B036-BCD6B5C401E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF34CE92-03CC-4885-B036-BCD6B5C401E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF34CE92-03CC-4885-B036-BCD6B5C401E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E104BFFA-D595-4338-AA16-BDF4649A3741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E104BFFA-D595-4338-AA16-BDF4649A3741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E104BFFA-D595-4338-AA16-BDF4649A3741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E104BFFA-D595-4338-AA16-BDF4649A3741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD77426-5A40-4A6C-8D2F-D161A598DD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD77426-5A40-4A6C-8D2F-D161A598DD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD77426-5A40-4A6C-8D2F-D161A598DD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD77426-5A40-4A6C-8D2F-D161A598DD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C5D9C1D-9A0A-42FA-B659-DDBEF0B97647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5D9C1D-9A0A-42FA-B659-DDBEF0B97647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5D9C1D-9A0A-42FA-B659-DDBEF0B97647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5D9C1D-9A0A-42FA-B659-DDBEF0B97647}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {770F9E16-4494-496A-8117-8728A94E3834}
+	EndGlobalSection
+EndGlobal

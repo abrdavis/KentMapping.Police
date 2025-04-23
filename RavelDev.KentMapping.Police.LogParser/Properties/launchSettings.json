@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RavelDev.KentMapping.PoliceLogParser": {
+      "commandName": "Project",
+      "commandLineArgs": "--parseall True"
+    }
+  }
+}
