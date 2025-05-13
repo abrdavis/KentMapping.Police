@@ -13,7 +13,7 @@ function getIncidentsForTypeAndDate(kentPoliceIncidentTypeId, startDate, endDate
         endDate: endDate
     }
     const paramsStr = objectToQueryString(params);
-    const url = `${import.meta.env.VITE_API_URL}//PoliceIncident/GetIncidentsForTypeAndDate?${paramsStr}`;
+    const url = `${import.meta.env.VITE_API_URL}/PoliceIncident/GetIncidentsForTypeAndDate?${paramsStr}`;
     return axios.get(url, { crossDomain: true })
         .then(response => {
             return response;

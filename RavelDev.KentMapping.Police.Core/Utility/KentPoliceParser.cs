@@ -110,7 +110,7 @@ namespace RavelDev.KentMapping.Police.Core.Utility
 
                     var detector = new SimpleNurminenDetectionAlgorithm();
                     var regions = detector.Detect(extractedPage);
-
+                    if (regions.Count <= 0) continue;
                     var ea = new BasicExtractionAlgorithm();
                     IReadOnlyList<Table> tables = ea.Extract(extractedPage.GetArea(regions[0].BoundingBox));
 
@@ -217,7 +217,6 @@ namespace RavelDev.KentMapping.Police.Core.Utility
                     var reportFileId = KentPoliceRepo.InsertPoliceReportFile(fileName);
                     var reportData = ParseCaseReportPdf(reportPdfLocation);
                     KentPoliceRepo.InsertCaseReport(reportData, reportFileId);
-                    File.Move(file.FullName, $"{ParserConfig.ReportsProcessedDir}\\{file.FullName}");
                 }
                 catch (Exception ex)
                 {
@@ -233,7 +232,7 @@ namespace RavelDev.KentMapping.Police.Core.Utility
 
         public void ParsePendingIncidents()
         {
-            DirectoryInfo di = new DirectoryInfo(ParserConfig.IncidentsProcessedDir);
+            DirectoryInfo di = new DirectoryInfo(ParserConfig.IncidentsPendingDir);
             FileInfo[] files = di.GetFiles("*.pdf");
 
             foreach (var file in files)
@@ -245,7 +244,6 @@ namespace RavelDev.KentMapping.Police.Core.Utility
                     var incidentFileId = KentPoliceRepo.InsertIncidentFile(fileName);
                     var incidentData = ParseIncidentPdf(incidentsPdfLocation);
                     KentPoliceRepo.InsertPoliceIncident(incidentData, incidentFileId);
-                    File.Move(file.FullName, $"{ParserConfig.IncidentsProcessedDir}\\{file.FullName}");
                 }
                 catch (Exception ex)
                 {
@@ -253,7 +251,7 @@ namespace RavelDev.KentMapping.Police.Core.Utility
                 }
                 finally
                 {
-                    File.Move(file.FullName, $"{ParserConfig.IncidentsProcessedDir}\\{file.FullName}");
+                    File.Move(file.FullName, $"{ParserConfig.IncidentsProcessedDir}\\{file.Name}");
                 }
 
             }

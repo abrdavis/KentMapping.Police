@@ -118,7 +118,7 @@ async function queryData() {
         clearHeatLayer();
         activePoints = [];
         activeMapMarkers = [];
-        incidentsToDisplay = res.data.data;
+        incidentsToDisplay = res.data.incidentData;
         incidentsToDisplay.forEach((incident) => {
             let point = [incident.longitude, incident.latitude];
             activePoints.push(point)

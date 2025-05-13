@@ -25,7 +25,7 @@ namespace RavelDev.KentMapping.WebApi.Controllers
             try
             {
                 var trafficStops = KentPoliceRepo.GetIncidentsForTypeAndDateRange(incidentTypeId, startDate, endDate);
-                return new JsonResult(new { data = trafficStops, success= true });
+                return new JsonResult(new { incidentData = trafficStops, success= true });
             }
             catch(Exception ex)
             {
@@ -48,7 +48,7 @@ namespace RavelDev.KentMapping.WebApi.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error getting page model.");
-                return new JsonResult(new { success = false });
+                return new JsonResult(new { success = false, ex = ex.Message});
             }
         }
     }

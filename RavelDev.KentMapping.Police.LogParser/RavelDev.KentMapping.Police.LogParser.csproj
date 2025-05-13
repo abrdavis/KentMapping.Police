@@ -5,6 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>4cfbb1ea-12c6-4597-8652-2a47c01ef3a9</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,6 +25,12 @@
   <ItemGroup>
     <ProjectReference Include="..\..\RavelDev.GoogleMaps\RavelDev.GoogleMaps.csproj" />
     <ProjectReference Include="..\RavelDev.KentMapping.Police.Core\RavelDev.KentMapping.Police.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RavelDev.Core">
+      <HintPath>..\externalDlls\RavelDev.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
